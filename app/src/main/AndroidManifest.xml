@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecyclerMain"></activity>
+        <activity android:name=".Viewpager3"></activity>
+        <activity android:name=".Viewpager2" />
+        <activity android:name=".Viewpager1" />
+        <activity android:name=".Viewpager" />
+        <activity android:name=".RecyclerMain" />
         <activity
             android:name=".ListActivity"
             android:label="ListActivity" />
