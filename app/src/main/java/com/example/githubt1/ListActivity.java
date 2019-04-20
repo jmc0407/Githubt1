@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -17,11 +18,14 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        String[]values={"1","2","3","4","5"};
+        Intent intent =new Intent(this.getIntent());//인텐트받기
+
+
+       String[]values={"1","2","3","4","5"};
         ArrayAdapter<String>adapter=new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,values);
         ListView listView=(ListView)findViewById(R.id.List1);
         listView.setAdapter(adapter);
-        Intent intent =new Intent(this.getIntent());//인텐트받기
     }
+
 }
